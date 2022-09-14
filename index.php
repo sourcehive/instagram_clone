@@ -15,3 +15,15 @@
     $userId = $_SESSION['user_id'];
      
  }
+ ?>
+
+<!DOCTYPE html>
+<html>
+    <?php include('templates/header.signin.php');?>
+
+    <?php include('templates/footer.php');?>
+
+</html>
+
+
+
