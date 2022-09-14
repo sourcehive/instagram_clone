@@ -1,14 +1,17 @@
 <?php
 
+ error_reporting(0);
 
-$conn = mysqli_connect("localhost","root","","instagramclone")or die(mysqli_error());
+ include('connect.php');
 
-if($conn){
-    echo "success";
-}else{
-    echo "error";
+ session_start();
 
-}
-
-
-?>
+ if(!isset($_SESSION['user_id'])){
+ 
+     header('location:signin.php');
+               
+ }else{
+     
+    $userId = $_SESSION['user_id'];
+     
+ }
